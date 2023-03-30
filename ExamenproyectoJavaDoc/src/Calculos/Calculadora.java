@@ -2,27 +2,27 @@ package Calculos;
 
 import java.util.Scanner;
 /**
- * La clase Calculadora realiza los cálculos de sumar, restar, dividir y calcula la tabla de multiplicar.
+ * La clase Calculadora realiza los cÃ¡lculos de sumar, restar, dividir y calcula la tabla de multiplicar.
  * @author noeli
- * @version 1.2
+ * @version 1.3
  * @since 22/03/2023
  *
  */
 public class Calculadora {
 /**
- * Método principal de ejecución
+ * MÃ©todo principal de ejecuciÃ³n
  * @param args
- * 		Los argumentos de ejecución del programa Java.
+ * 		Los argumentos de ejecuciÃ³n del programa Java.
  */
 	public static void main(String[] args) {
 		obtenerCalculo();
 	}
 	/**
-	 * Método que te pide por pantalla la operación que desea realizar e invoca al método que realiza la operación.
+	 * MÃ©todo que te pide por pantalla la operaciÃ³n que desea realizar e invoca al mÃ©todo que realiza la operaciÃ³n.
 	 */
 	public static void obtenerCalculo() {
 		Scanner lectura = new Scanner (System.in);
-		System.out.println("Ingrese el número de una de las operaciones: ");
+		System.out.println("Ingrese el nÃºmero de una de las operaciones: ");
 		System.out.println("1 - Suma ");
 		System.out.println("1 - Resta ");
 		System.out.println("3 - Divide");
@@ -32,15 +32,15 @@ public class Calculadora {
 		
 	}
 	/**
-	 * Método que solicita los atributos para realizar el cálculo.
+	 * MÃ©todo que solicita los atributos para realizar el cÃ¡lculo.
 	 *
 	 * @param operacion
-	 *       Parámetro que contiene la operación a realizar.
+	 *       ParÃ¡metro que contiene la operaciÃ³n a realizar.
 	 *       Si su valor es 1 realiza la suma.
 	 *       Si su valor es 2 realiza la recta.
-	 *       Si su valor es 3 realiza la división.
-	 *       Si su valor es 4 obtiene la tabla de multiplicar del parámetro solicitado.
-	 *       Si no es ninguna de estos valores no realiza ninguna operación.
+	 *       Si su valor es 3 realiza la divisiÃ³n.
+	 *       Si su valor es 4 obtiene la tabla de multiplicar del parÃ¡metro solicitado.
+	 *       Si no es ninguna de estos valores no realiza ninguna operaciÃ³n.
 	 */
 	public static void solicitaDatosyRealizaCalculos(final String operacion) {
 		String numero1 ="";
@@ -51,7 +51,7 @@ public class Calculadora {
         case "1": 
         	System.out.println ("Ha seleccionado sumar"); 
         	lectura = new Scanner (System.in);
-    		System.out.println("Ingrese los números a sumar: ");
+    		System.out.println("Ingrese los nÃºmeros a sumar: ");
     		System.out.println("Numero 1: ");
     		numero1 = lectura.next();
     		System.out.println("Numero 2: ");
@@ -64,7 +64,7 @@ public class Calculadora {
         case "2":
         	System.out.println ("Ha seleccionado restar"); 
         	lectura = new Scanner (System.in);
-    		System.out.println("Ingrese los números a restar: ");
+    		System.out.println("Ingrese los nÃºmeros a restar: ");
     		System.out.println("Numero 1: ");
     		numero1 = lectura.next();
     		System.out.println("Numero 2: ");
@@ -77,7 +77,7 @@ public class Calculadora {
         case "3": 
         	System.out.println ("Ha seleccionado dividir "); 
         	lectura = new Scanner (System.in);
-    		System.out.println("Ingrese los números a dividir: ");
+    		System.out.println("Ingrese los nÃºmeros a dividir: ");
     		System.out.println("Numero 1: ");
     		numero1 = lectura.next();
     		System.out.println("Numero 2: ");
@@ -93,7 +93,7 @@ public class Calculadora {
         case "4":
         	System.out.println ("Ha seleccionado obtener la tabla de multiplicar "); 
         	lectura = new Scanner (System.in);
-    		System.out.println("Ingrese el número a obtener su tabla: ");
+    		System.out.println("Ingrese el nÃºmero a obtener su tabla: ");
     		System.out.println("Numero 1: ");
     		numero1 = lectura.next();
     		calculo = new Calculo(Integer.parseInt(numero1));
@@ -103,7 +103,7 @@ public class Calculadora {
         
         break;
 	} 
-	System.out.println("Finalización del cálculo");
+	System.out.println("FinalizaciÃ³n del cÃ¡lculo");
 	}
 
 }
