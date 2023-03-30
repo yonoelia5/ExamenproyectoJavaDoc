@@ -33,6 +33,7 @@ public class Calculadora {
 	}
 	/**
 	 * Método que solicita los atributos para realizar el cálculo.
+	 *
 	 * @param operacion
 	 *       Parámetro que contiene la operación a realizar.
 	 *       Si su valor es 1 realiza la suma.
